@@ -58,5 +58,5 @@ public class Employee {
         Employee employee = (Employee) o;
         return Objects.equals(Id, employee.Id) && Objects.equals(fullName, employee.fullName) && Objects.equals(salary, employee.salary);
     }
-    
+
 }
