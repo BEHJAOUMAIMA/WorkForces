@@ -1,0 +1,32 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="employeeSingleton" class="example.com.entities.Employee">
+        <property name="id" value="1" />
+        <property name="fullname" value="John Doe" />
+        <property name="salary" value="50000.0" />
+    </bean>
+
+    <bean id="employeePrototype" class="example.com.entities.Employee" scope="prototype">
+        <property name="id" value="2" />
+        <property name="fullname" value="Jane Smith" />
+        <property name="salary" value="60000.0" />
+    </bean>
+
+    <bean id="departmentSingleton" class="example.com.entities.Department">
+        <property name="id" value="101" />
+        <property name="name" value="Ressources Humaines" />
+        <property name="description" value="Some description for this department" />
+    </bean>
+
+    <bean id="departmentPrototype" class="example.com.entities.Department" scope="prototype">
+        <property name="id" value="102" />
+        <property name="name" value="Développement" />
+        <property name="description" value="Description for this department" />
+    </bean>
+
+
+
+</beans>
