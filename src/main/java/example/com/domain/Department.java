@@ -1,18 +1,19 @@
-package example.com.entities;
+package example.com.domain;
+
 
 import java.util.Objects;
 
 public class Department {
 
     private Long Id;
-    private String name;
+    private String department_name;
     private String description;
 
     public Department() {
     }
 
-    public Department(String name, String description) {
-        this.name = name;
+    public Department(String department_name, String description) {
+        this.department_name = department_name;
         this.description = description;
     }
 
@@ -24,12 +25,12 @@ public class Department {
         Id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getDepartment_name() {
+        return department_name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setDepartment_name(String department_name) {
+        this.department_name = department_name;
     }
 
     public String getDescription() {
@@ -44,7 +45,7 @@ public class Department {
     public String toString() {
         return "Department{" +
                 "Id=" + Id +
-                ", name='" + name + '\'' +
+                ", department_name='" + department_name + '\'' +
                 ", description='" + description + '\'' +
                 '}';
     }
@@ -54,8 +55,7 @@ public class Department {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Department that = (Department) o;
-        return Objects.equals(Id, that.Id) && Objects.equals(name, that.name) && Objects.equals(description, that.description);
+        return Objects.equals(Id, that.Id) && Objects.equals(department_name, that.department_name) && Objects.equals(description, that.description);
     }
-
 
 }
