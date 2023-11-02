@@ -1,8 +1,2 @@
-package example.com.repositories;
-
-
-public class EmployeeRepository {
-
-
-
+package example.com.repositories;public interface EmployeeRepository {
 }
